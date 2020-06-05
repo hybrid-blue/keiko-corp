@@ -111,3 +111,12 @@ $(document).ready(function(){
 	});
 
 });
+
+document.addEventListener('load', function(){
+	const linkElm = document.createElement('link');
+	linkElm.rel = 'stylesheet';
+	linkElm.href = 'css/font.min.css';
+	linkElm.type = 'text/css';
+	const target = document.querySelector('head');
+	target.appendChild(linkElm);
+});
