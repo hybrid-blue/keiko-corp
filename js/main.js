@@ -122,6 +122,7 @@ const loadStylesheet = function(src){
 }
 
 window.addEventListener('load', function(){
+	console.log('Page event')
 	const target = document.querySelector('head');
 	loadStylesheet('css/bootstrap.css');
 	loadStylesheet('css/font.min.css');
