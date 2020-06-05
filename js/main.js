@@ -127,26 +127,26 @@ document.addEventListener('load', function(){
 	linkElmFont.rel = 'stylesheet';
 	linkElmFont.href = 'css/font.min.css';
 	linkElmFont.type = 'text/css';
-	target.appendChild(linkElm);
+	target.appendChild(linkElmFont);
 
 	// animate.min.css
 	const linkElmAnimate = document.createElement('link');
 	linkElmAnimate.rel = 'stylesheet';
 	linkElmAnimate.href = 'css/animate.min.css';
 	linkElmAnimate.type = 'text/css';
-	target.appendChild(linkElm);
+	target.appendChild(linkElmAnimate);
 
 	// owl.transitions.min.css
 	const linkElmOwlTrans = document.createElement('link');
 	linkElmOwlTransrel = 'stylesheet';
 	linkElmOwlTrans.href = 'css/owl.transitions.min.css';
 	linkElmOwlTrans.type = 'text/css';
-	target.appendChild(linkElm);
+	target.appendChild(linkElmOwlTrans);
 
 	// owl.carousel.min.css
 	const linkElmOwlCar = document.createElement('link');
 	linkElmOwlCar.rel = 'stylesheet';
-	linkElmOwlCarhref = 'css/font.min.css';
+	linkElmOwlCar.href = 'css/font.min.css';
 	linkElmOwlCar.type = 'text/css';
-	target.appendChild(linkElm);
+	target.appendChild(linkElmOwlCar);
 });
