@@ -114,6 +114,7 @@ $(document).ready(function(){
 
 
 const loadStylesheet = function(src){
+	console.log(src);
 	const linkElm = document.createElement('link');
 	linkElm.rel = 'stylesheet';
 	linkElm.href = 'css/bootstrap.css';
