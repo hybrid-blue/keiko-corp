@@ -128,6 +128,22 @@ $(document).ready(function(){
 		loadStylesheet('css/owl.transitions.min.css');
 		loadStylesheet('css/font.min.css');
 
-	});
+const loadStylesheet = function(src){
+	console.log(src);
+	const linkElm = document.createElement('link');
+	linkElm.rel = 'stylesheet';
+	linkElm.href = 'css/bootstrap.css';
+	linkElm.type = 'text/css';
+	target.appendChild(linkElm);
+}
+
+document.addEventListener('load', function(){
+	const target = document.querySelector('head');
+	//bootstrap.css
+	loadStylesheet('css/bootstrap.css');
+	loadStylesheet('css/font.min.css');
+	loadStylesheet('css/animate.min.css');
+	loadStylesheet('css/owl.transitions.min.css');
+	loadStylesheet('css/font.min.css');
 
 });
