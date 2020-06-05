@@ -113,7 +113,7 @@ $(document).ready(function(){
 });
 
 const loadStylesheet = function(src){
-	console.log(src);
+	const target = document.querySelector('head');
 	const linkElm = document.createElement('link');
 	linkElm.rel = 'stylesheet';
 	linkElm.href = 'css/bootstrap.css';
@@ -122,8 +122,6 @@ const loadStylesheet = function(src){
 }
 
 window.addEventListener('load', function(){
-	console.log('Page event')
-	const target = document.querySelector('head');
 	loadStylesheet('css/bootstrap.css');
 	loadStylesheet('css/font.min.css');
 	loadStylesheet('css/animate.min.css');
