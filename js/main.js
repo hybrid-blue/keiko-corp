@@ -113,10 +113,40 @@ $(document).ready(function(){
 });
 
 document.addEventListener('load', function(){
+	const target = document.querySelector('head');
+
+	//bootstrap.css
 	const linkElm = document.createElement('link');
 	linkElm.rel = 'stylesheet';
-	linkElm.href = 'css/font.min.css';
+	linkElm.href = 'css/bootstrap.css';
 	linkElm.type = 'text/css';
-	const target = document.querySelector('head');
+	target.appendChild(linkElm);
+
+	//font.min.css
+	const linkElmFont = document.createElement('link');
+	linkElmFont.rel = 'stylesheet';
+	linkElmFont.href = 'css/font.min.css';
+	linkElmFont.type = 'text/css';
+	target.appendChild(linkElm);
+
+	// animate.min.css
+	const linkElmAnimate = document.createElement('link');
+	linkElmAnimate.rel = 'stylesheet';
+	linkElmAnimate.href = 'css/animate.min.css';
+	linkElmAnimate.type = 'text/css';
+	target.appendChild(linkElm);
+
+	// owl.transitions.min.css
+	const linkElmOwlTrans = document.createElement('link');
+	linkElmOwlTransrel = 'stylesheet';
+	linkElmOwlTrans.href = 'css/owl.transitions.min.css';
+	linkElmOwlTrans.type = 'text/css';
+	target.appendChild(linkElm);
+
+	// owl.carousel.min.css
+	const linkElmOwlCar = document.createElement('link');
+	linkElmOwlCar.rel = 'stylesheet';
+	linkElmOwlCarhref = 'css/font.min.css';
+	linkElmOwlCar.type = 'text/css';
 	target.appendChild(linkElm);
 });
